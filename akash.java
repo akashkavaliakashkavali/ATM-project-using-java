@@ -8,17 +8,17 @@ class ATM {
         this.balance = initialBalance;
     }
 
-    // method to check PIN
+   
     public boolean verifyPin(int enteredPin) {
         return enteredPin == pin;
     }
 
-    // method to check balance
+   
     public void checkBalance() {
         System.out.println("Your current balance: ₹" + balance);
     }
 
-    // method to deposit money
+    
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -29,7 +29,7 @@ class ATM {
         }
     }
 
-    // method to withdraw money
+    
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -46,7 +46,7 @@ class ATM {
 public class akash {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ATM atm = new ATM(5000);  // initial balance
+        ATM atm = new ATM(5000);  
 
         System.out.print("Enter your PIN: ");
         int enteredPin = sc.nextInt();
