@@ -52,7 +52,7 @@ public class akash {
         int enteredPin = sc.nextInt();
 
         if (atm.verifyPin(enteredPin)) {
-            System.out.println("\n✅ Login Successful!\n");
+            System.out.println("\n Login Successful!\n");
 
             int choice;
             do {
@@ -89,7 +89,7 @@ public class akash {
             } while (choice != 4);
 
         } else {
-            System.out.println("❌ Incorrect PIN! Access Denied.");
+            System.out.println(" Incorrect PIN! Access Denied.");
         }
 
         sc.close();
